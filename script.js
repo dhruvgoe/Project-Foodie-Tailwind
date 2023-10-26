@@ -13,3 +13,10 @@ cross.addEventListener('click',() => {
     bars.classList.toggle('hidden');
     menu.classList.toggle('scale-y-0');
 })
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener('scroll',() => {
+    navbar.classList[window.scrollY>100?"add":"remove"]("navbar-active");
+})
+

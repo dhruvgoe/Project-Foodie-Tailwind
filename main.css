@@ -6,19 +6,18 @@
 
 /* CSS */
 
-
-@layer utilities{
-    html::-webkit-scrollbar{
-    width: 0.2em;
+.navbar-active{
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    animation: slideIn 0.5s ease forwards;
 }
 
-html::-webkit-scrollbar-track{
-    background-color: #00040F;
-}
-
-html::-webkit-scrollbar-thumb{
-    height: 0.4em;
-    border-radius: 0.2em;
-    background-color: #ff9d2d;
-}
+@keyframes slideIn {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
