@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       animation: {
-        'slideIn': 'slideIn 500ms ease forwards',
+        slideIn: "slideIn 500ms ease forwards",
       },
       keyframes: {
-        'slideIn': {
-          '0%': {transform: 'translateY(-100%)'},
-          '100%': {transform: 'translateY(0%)'},
+        slideIn: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0%)" },
         },
-    },
+      },
       screens: {
-        'xsm' : '380px' 
-      }
+        xsm: "380px",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
-}
-}
+};
