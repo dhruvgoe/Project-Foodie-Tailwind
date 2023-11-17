@@ -21,3 +21,32 @@
         transform: translateY(0%);
     }
 }
+
+.zoomer{
+  animation: zoom 4s linear infinite forwards;
+}
+@keyframes zoom {
+    0%{
+      transform: scale(1.1);
+    }
+    50%{
+      transform: scale(0.9);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+}
+  
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #dd9d2d; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Color of the scrollbar track */
+    height: 100px;
+  }
+  
