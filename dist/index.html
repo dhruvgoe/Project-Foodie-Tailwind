@@ -1,194 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie</title>
     
-    <link rel="shortcut icon" href="/assets/favicon-ebba5d19.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="/assets/index-1876f5c1.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="/assets/favicon-ebba5d19.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/index-34ae5512.css">
+  </head>
+  <body>
     <!-- Wrapper -->
     <div class="p-0 m-0 box-border overflow-x-hidden">
-
-        <!-- Nav + Back -->
-        <div class="w-full bg-[url('./Images/hero-Background.jpeg')]  md:bg-[url('./Images/hero-BG3.png')]  bg-cover bg-center bg-no-repeat relative">
-
-            <!-- Navbar -->
-            <div class="py-4 w-11/12 md:w-10/12 max-w-6xl mx-auto flex justify-between items-center text-white">
-
+      <!-- Nav + Back -->
+      <div
+        class="w-full bg-[url('./Images/hero-Background.jpeg')] md:bg-[url('./Images/hero-BG3.png')] bg-cover bg-center bg-no-repeat relative"
+      >
+        <div class="navbar w-[100%]">
+          <!-- Navbar -->
+          <div
+            class="py-4 w-11/12 md:w-10/12 max-w-6xl mx-auto flex justify-between items-center text-white"
+          >
             <!-- Navbar Left -->
             <div class="">
-                <a href="#" class="flex items-center text-[30px] font-bold">Foodie<p class="text-[40px] font-bold text-yellow-500">.</p></a>
+              <a
+                href="#"
+                class="nav-logo flex items-center text-[30px] font-bold"
+                >Foodie
+                <p class="text-[40px] font-bold text-yellow-500">.</p></a
+              >
             </div>
             <!-- Navbar Right -->
             <div class="flex justify-around">
-                <div class="hidden justify-around items-center pr-5 gap-x-2 md:flex">
-                    <a href="#" class="text-gray-300 font-semibold px-3">Home</a>
-                    <a href="#" class="text-gray-300 font-semibold px-3">Shop</a>
-                    <a href="#" class="text-gray-300 font-semibold px-3">Contact Us</a>
+              <div
+                class="hidden justify-around items-center pr-5 gap-x-2 md:flex"
+              >
+                <a href="#" class="nav-logo text-gray-300 font-semibold px-3"
+                  >Home</a
+                >
+                <a href="#" class="nav-logo text-gray-300 font-semibold px-3"
+                  >Shop</a
+                >
+                <a href="#" class="nav-logo text-gray-300 font-semibold px-3"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="hidden justify-between items-center gap-x-3 sm:flex">
+                <button class="bg-yellow-500 py-2 px-8 rounded-sm">
+                  Log In
+                </button>
+                <button class="bg-yellow-500 py-2 px-8 rounded-sm">
+                  Sign Up
+                </button>
+              </div>
+              <!-- Bars and Cross -->
+              <div class="md:hidden mx-4 flex items-center">
+                <div class="" id="bars">
+                  <i class="fa-solid fa-bars text-2xl nav-logo"></i>
                 </div>
-                <div class="hidden justify-between items-center gap-x-3 sm:flex">
-                    <button class="bg-yellow-500 py-2 px-8 rounded-sm ">Log In</button>
-                    <button class="bg-yellow-500 py-2 px-8 rounded-sm ">Sign Up</button>
+                <div class="hidden" id="cross">
+                  <i class="fa-solid fa-xmark text-2xl nav-logo"></i>
                 </div>
-                <!-- Bars and Cross -->
-                <div class="md:hidden mx-4 flex items-center ">
-                    <div class="" id="bars">
-                        <i class="fa-solid fa-bars text-2xl" ></i>
-                    </div>
-                    <div class="hidden" id="cross">
-                        <i class="fa-solid fa-xmark text-2xl" ></i>
-                    </div>
-                </div>
+              </div>
             </div>
-
-            </div>
-
-            <div class="w-full h-[0.5px] bg-gray-300"></div>
-
-            <!-- Drop-Down Toggle Menu -->
-            <div class="w-[96%] left-[2%] right-[2%] py-2 bg-white absolute z-10 scale-y-0 transition-all duration-300 origin-top flex flex-col justify-start rounded-b-lg" id="menu">
-
-                <a href="#" class="text-black font-semibold px-3 py-5 border-b-[0.5px]">Home</a>
-                <a href="#" class="text-black font-semibold px-3 py-5 border-b-[0.5px]">Shop</a>
-                <a href="#" class="text-black font-semibold px-3 py-5">Contact Us</a>
-                
-            </div>
-
-            <!-- Hero Section -->
-            
-            <div class="w-11/12 md:w-10/12 max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center mx-auto py-32 ">
-
-                <!-- Hero Left -->
-                <div class="flex flex-col items-center md:items-start gap-y-2 ">
-
-                    <p class="text-[2rem] lg:text-[3rem] text-yellow-600 text-center md:text-left" style="font-family: 'Cedarville Cursive', cursive;">Eat Sleep And</p>
-                    <p class="lg:text-[4rem] text-[#e7c8cd] font-bold leading-tight text-center md:text-left md:text-[3rem] text-[2rem]">Supper delicious Burger in town!</p>
-                    <p class="text-[20px] text-[#e7c8cd] text-center md:text-left">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <button class="text-[20px] my-4 text-white bg-yellow-600 py-3 px-6 rounded-md hover:bg-white hover:text-black transition-all duration-200">Book a Table</button>
-
-                </div>
-
-                <!-- Hero Right -->
-                <div class="relative hidden md:block ">
-
-                    <img src="/assets/hero-burger-1ac00cb8.png" alt="" class="relative z-20"> 
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
-        <!-- Swipe Menu -->
+        <div class="w-full h-[0.5px] bg-gray-300"></div>
 
-        <div class="swipe-menu w-full " style="background-color: hsl(38, 44%, 96%);">
-
-            <div class="w-11/12 md:w-10/12 max-w-6xl mx-auto py-32 overflow-x-scroll flex gap-x-3 ">
-
-                <div class=" min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] 
-                before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group
-                hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200
-                flex flex-col justify-around items-center pt-12
-                ">
-                    
-
-                    <img src="/assets/promo-icon-1-094a5bfa.svg" alt="promo-icon-1" class="relative z-10 group-hover:hidden transition-all duration-200" >
-                    <img src="/assets/promo-icon-11-7fcb1032.svg" alt="promo-icon-11" class="relative hidden group-hover:block z-10 transition-all duration-200" >
-                    <h1 class="font-bold text-[25px] group-hover:text-white z-10">Mexican Pizza</h1>
-                    <p class="text-gray-500 group-hover:text-white z-10 text-center px-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <img src="/assets/promo-1-1f081d12.png" alt="promo-1" class="relative z-10 my-10 w-10/12">
-
-                </div>
-
-                <div class=" min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] 
-                before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group
-                hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200
-                flex flex-col justify-around items-center pt-12
-                ">
-                    
-
-                    <img src="/assets/promo-icon-2-f30c8d28.svg" alt="promo-icon-2" class="relative z-10 group-hover:hidden transition-all duration-200" >
-                    <img src="/assets/promo-icon-22-42a19eae.svg" alt="promo-icon-22" class="relative hidden group-hover:block z-10 transition-all duration-200" >
-                    <h1 class="font-bold text-[25px] group-hover:text-white z-10">Soft Drinks</h1>
-                    <p class="text-gray-500 group-hover:text-white z-10 text-center px-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <img src="/assets/promo-2-438b0029.png" alt="promo-1" class="relative z-10 my-10 w-10/12">
-
-                </div>
-
-                <div class=" min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] 
-                before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group
-                hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200
-                flex flex-col justify-around items-center pt-12
-                ">
-                    
-
-                    <img src="/assets/promo-icon-3-6482b50f.svg" alt="promo-icon-3" class="relative z-10 group-hover:hidden transition-all duration-200" >
-                    <img src="/assets/promo-icon-33-26ad88ef.svg" alt="promo-icon-33" class="relative hidden group-hover:block z-10 transition-all duration-200" >
-                    <h1 class="font-bold text-[25px] group-hover:text-white z-10">French Fry</h1>
-                    <p class="text-gray-500 group-hover:text-white z-10 text-center px-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <img src="/assets/promo-3-627397eb.png" alt="promo-1" class="relative z-10 my-10 w-10/12">
-
-                </div>
-
-                <div class=" min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] 
-                before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group
-                hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200
-                flex flex-col justify-around items-center pt-12
-                ">
-                    
-
-                    <img src="/assets/promo-icon-4-11c75fdb.svg" alt="promo-icon-4" class="relative z-10 group-hover:hidden transition-all duration-200" >
-                    <img src="/assets/promo-icon-44-0a949808.svg" alt="promo-icon-44" class="relative hidden group-hover:block z-10 transition-all duration-200" >
-                    <h1 class="font-bold text-[25px] group-hover:text-white z-10">Burger Kingo</h1>
-                    <p class="text-gray-500 group-hover:text-white z-10 text-center px-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <img src="/assets/promo-4-d9da853f.png" alt="promo-1" class="relative z-10 my-10 w-10/12">
-
-                </div>
-
-                <div class=" min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] 
-                before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group
-                hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200
-                flex flex-col justify-around items-center pt-12
-                ">
-                    
-
-                    <img src="/assets/promo-icon-5-d16fda78.svg" alt="promo-icon-5" class="relative z-10 group-hover:hidden transition-all duration-200" >
-                    <img src="/assets/promo-icon-55-4ff5d0c0.svg" alt="promo-icon-55" class="relative hidden group-hover:block z-10 transition-all duration-200" >
-                    <h1 class="font-bold text-[25px] group-hover:text-white z-10">Chicken Masala</h1>
-                    <p class="text-gray-500 group-hover:text-white z-10 text-center px-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                    <img src="/assets/promo-5-f013d759.png" alt="promo-1" class="relative z-10 my-10 w-10/12">
-
-                </div>
-
-
-            </div>
-
+        <!-- Drop-Down Toggle Menu -->
+        <div
+          class="w-[96%] left-[2%] right-[2%] top-[92px] py-2 bg-white fixed z-10 scale-y-0 transition-all duration-300 origin-top flex flex-col justify-start rounded-b-lg"
+          id="menu"
+        >
+          <a
+            href="#"
+            class="text-black font-semibold px-3 py-5 border-b-[0.5px]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-black font-semibold px-3 py-5 border-b-[0.5px]"
+            >Shop</a
+          >
+          <a href="#" class="text-black font-semibold px-3 py-5">Contact Us</a>
         </div>
 
-        <!-- Discount Section -->
+        <!-- Hero Section -->
 
-        <div class="">
+        <div
+          class="w-11/12 md:w-10/12 max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center mx-auto py-[5%]"
+        >
+          <!-- Hero Left -->
+          <div class="flex flex-col items-center md:items-start gap-y-2">
+            <p
+              class="text-[2rem] lg:text-[3rem] text-yellow-600 text-center md:text-left"
+              style="font-family: 'Cedarville Cursive', cursive"
+            >
+              Eat Sleep And
+            </p>
+            <p
+              class="lg:text-[4rem] text-[#e7c8cd] font-bold leading-tight text-center md:text-left md:text-[3rem] text-[2rem]"
+            >
+              Supper delicious Burger in town!
+            </p>
+            <p class="text-[20px] text-[#e7c8cd] text-center md:text-left">
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <button
+              class="text-[20px] my-4 text-white bg-yellow-600 py-3 px-6 rounded-md hover:bg-white hover:text-black transition-all duration-200"
+            >
+              Book a Table
+            </button>
+          </div>
 
-            <!-- Left Section -->
-            <div class="">
-                
-            </div>
+          <!-- Hero Right -->
+          <div class="relative hidden md:block">
+            <img src="/assets/hero-burger-1ac00cb8.png" alt="" class="relative z-20" />
+          </div>
+        </div>
+      </div>
 
-            <!-- Right Section -->
-            <div class="">
+      <!-- Swipe Menu -->
 
-            </div>
+      <div
+        class="swipe-menu w-full"
+        style="background-color: hsl(38, 44%, 96%)"
+      >
+        <div
+          class="w-11/12 md:w-10/12 max-w-6xl mx-auto py-[10%] overflow-x-scroll flex gap-x-3"
+        >
+          <div
+            class="min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200 flex flex-col justify-around items-center pt-12"
+          >
+            <img
+              src="/assets/promo-icon-1-094a5bfa.svg"
+              alt="promo-icon-1"
+              class="relative group-hover:hidden transition-all duration-200"
+            />
+            <img
+              src="/assets/promo-icon-11-7fcb1032.svg"
+              alt="promo-icon-11"
+              class="relative hidden group-hover:block transition-all duration-200"
+            />
+            <h1 class="font-bold text-[25px] group-hover:text-white z-[1]">
+              Mexican Pizza
+            </h1>
+            <p
+              class="text-gray-500 group-hover:text-white text-center px-6 z-[1]"
+            >
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <img
+              src="/assets/promo-1-1f081d12.png"
+              alt="promo-1"
+              class="relative my-10 w-10/12"
+            />
+          </div>
 
+          <div
+            class="min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200 flex flex-col justify-around items-center pt-12"
+          >
+            <img
+              src="/assets/promo-icon-2-f30c8d28.svg"
+              alt="promo-icon-2"
+              class="relative z-1 group-hover:hidden transition-all duration-200"
+            />
+            <img
+              src="/assets/promo-icon-22-42a19eae.svg"
+              alt="promo-icon-22"
+              class="relative hidden group-hover:block z-10 transition-all duration-200"
+            />
+            <h1 class="font-bold text-[25px] group-hover:text-white z-[1]">
+              Soft Drinks
+            </h1>
+            <p
+              class="text-gray-500 group-hover:text-white z-[1] text-center px-6"
+            >
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <img
+              src="/assets/promo-2-438b0029.png"
+              alt="promo-1"
+              class="relative my-10 w-10/12"
+            />
+          </div>
+
+          <div
+            class="min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200 flex flex-col justify-around items-center pt-12"
+          >
+            <img
+              src="/assets/promo-icon-3-6482b50f.svg"
+              alt="promo-icon-3"
+              class="relative z-1 group-hover:hidden transition-all duration-200"
+            />
+            <img
+              src="/assets/promo-icon-33-26ad88ef.svg"
+              alt="promo-icon-33"
+              class="relative hidden group-hover:block z-10 transition-all duration-200"
+            />
+            <h1 class="font-bold text-[25px] group-hover:text-white z-[1]">
+              French Fry
+            </h1>
+            <p
+              class="text-gray-500 group-hover:text-white z-[1] text-center px-6"
+            >
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <img
+              src="/assets/promo-3-627397eb.png"
+              alt="promo-1"
+              class="relative my-10 w-10/12"
+            />
+          </div>
+
+          <div
+            class="min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200 flex flex-col justify-around items-center pt-12"
+          >
+            <img
+              src="/assets/promo-icon-4-11c75fdb.svg"
+              alt="promo-icon-4"
+              class="relative z-1 group-hover:hidden transition-all duration-200"
+            />
+            <img
+              src="/assets/promo-icon-44-0a949808.svg"
+              alt="promo-icon-44"
+              class="relative hidden group-hover:block z-10 transition-all duration-200"
+            />
+            <h1 class="font-bold text-[25px] group-hover:text-white z-[1]">
+              Burger Kingo
+            </h1>
+            <p
+              class="text-gray-500 group-hover:text-white z-[1] text-center px-6"
+            >
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <img
+              src="/assets/promo-4-d9da853f.png"
+              alt="promo-1"
+              class="relative my-10 w-10/12"
+            />
+          </div>
+
+          <div
+            class="min-w-[240px] max-w-[300px] w-11/12 min-h-[600px] bg-white relative before:content-[''] before:absolute before:bg-orange-400 before:h-3/5 before:w-[150%] before:-bottom-40 before:-rotate-[20deg] overflow-hidden before:-left-9 rounded-lg before:p-10 group hover:before:h-full hover:before:rotate-0 hover:before:-left-4 hover:before:bottom-0 before:transition-all before:duration-200 flex flex-col justify-around items-center pt-12"
+          >
+            <img
+              src="/assets/promo-icon-5-d16fda78.svg"
+              alt="promo-icon-5"
+              class="relative z-1 group-hover:hidden transition-all duration-200"
+            />
+            <img
+              src="/assets/promo-icon-55-4ff5d0c0.svg"
+              alt="promo-icon-55"
+              class="relative hidden group-hover:block z-10 transition-all duration-200"
+            />
+            <h1 class="font-bold text-[25px] group-hover:text-white z-[1]">
+              Chicken Masala
+            </h1>
+            <p
+              class="text-gray-500 group-hover:text-white z-[1] text-center px-6"
+            >
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+            <img
+              src="/assets/promo-5-f013d759.png"
+              alt="promo-1"
+              class="relative my-10 w-10/12"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Discount Section -->
+
+      <div
+        class="w-11/12 md:w-10/12 max-w-6xl mx-auto flex flex-col md:flex-row items-center py-[12%] gap-x-12"
+      >
+        <!-- Left Section -->
+        <div class="relative w-full sm:w-3/4 md:w-full">
+          <img src="/assets/about-banner-d7acf883.png" alt="" class="w-full" />
+          <img
+            src="/assets/sale-shape-red-e601cb91.png"
+            alt=""
+            class="zoomer w-[45%] absolute left-[10%] top-0"
+          />
         </div>
 
+        <!-- Right Section -->
+        <div class="w-full flex flex-col items-center md:items-start gap-y-4">
+          <h1 class="text-[40px] font-bold">
+            Caferio, Burgers, and Best Pizzas
+            <span class="text-[#dd9d2d]">in Town!</span>
+          </h1>
+          <p class="text-gray-500">
+            The restaurants in Hangzhou also catered to many northern Chinese
+            who had fled south from Kaifeng during the Jurchen invasion of the
+            1120s, while it is also known that many restaurants were run by
+            families.
+          </p>
+          <div class="flex items-center gap-x-2">
+            <div
+              class="rounded-full bg-[#dd9d2d] w-5 aspect-square flex justify-center items-center"
+            >
+              <i class="fa-solid fa-check text-white"></i>
+            </div>
+            <div>Delicious & Healthy Foods</div>
+          </div>
+          <div class="flex items-center gap-x-2">
+            <div
+              class="rounded-full bg-[#dd9d2d] w-5 aspect-square flex justify-center items-center"
+            >
+              <i class="fa-solid fa-check text-white"></i>
+            </div>
+            <div>Spacific Family And Kids Zone</div>
+          </div>
+          <div class="flex items-center gap-x-2">
+            <div
+              class="rounded-full bg-[#dd9d2d] w-5 aspect-square flex justify-center items-center"
+            >
+              <i class="fa-solid fa-check text-white"></i>
+            </div>
+            <div>Music & Other Facilities</div>
+          </div>
+          <div class="flex items-center gap-x-2">
+            <div
+              class="rounded-full bg-[#dd9d2d] w-5 aspect-square flex justify-center items-center"
+            >
+              <i class="fa-solid fa-check text-white"></i>
+            </div>
+            <div>Fastest Food Home Delivery</div>
+          </div>
+
+          <button
+            class="bg-[#dd9d2d] py-2 px-8 rounded-sm font-bold text-white hover:bg-black hover:origin-bottom-left transition-all duration-300"
+          >
+            Order Now!
+          </button>
+        </div>
+      </div>
+
+      <!-- Reveiw Section -->
+      <div style="background-color: hsl(38, 44%, 96%)">
+        <div class="w-11/12 md:w-10/12 max-w-6xl mx-auto py-10">
+          <p class="text-center text-red-600 font-bold">Testimonials</p>
+
+          <h1 class="text-center font-bold text-5xl">Our Customer <span class="text-[#dd9d2d]">Reviews</span></h1>
+
+          <p class="w-full mx-auto md:w-[36%] text-center py-6 text-gray-500">
+            Food is any substance consumed to provide nutritional support for an
+            organism.
+          </p>
+
+          <div class="w-full sm:w-3/4 mx-auto rounded-2xl shadow-lg bg-white flex flex-col items-center gap-y-5 p-5">
+            <div class="flex items-center gap-x-10 xsm:flex-row flex-col">
+              <img src="" alt="" id="avatar" class="w-32 rounded-full" />
+
+              <div class="flex flex-col items-center xsm:items-start">
+                <h2 id="naam" class="font-bold text-xl "></h2>
+
+                <p id="role" class=""></p>
+              </div>
+            </div>
+
+            <i class="fa-solid fa-quote-left  text-2xl text-[#dd9d2d]"></i>
+
+            <p id="review" class="text-center"></p>
+
+            <i class="fa-solid fa-quote-right text-2xl text-[#dd9d2d]"></i>
+
+            <div class="flex items-center gap-x-4">
+              <button id="left-btn" class="bg-transparent hover:bg-[#dd9d2d] px-3 py-2 rounded-full transition-all duration-300 hover:text-white">
+                <i class="fa-solid fa-chevron-left text-2xl "></i>
+              </button>
+              <button id="right-btn" class="bg-transparent hover:bg-[#dd9d2d] px-3 py-2 rounded-full transition-all duration-300 hover:text-white">
+                <i class="fa-solid fa-chevron-right text-2xl"></i>
+              </button>
+            </div>
+
+            <button id="surprise" class="text-xl bg-transparent hover:bg-[#dd9d2d] px-3 py-2 rounded-full transition-all duration-300 hover:text-white">Surprise Me</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
