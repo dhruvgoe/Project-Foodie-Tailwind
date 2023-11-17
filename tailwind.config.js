@@ -12,6 +12,9 @@ module.exports = {
           '100%': {transform: 'translateY(0%)'},
         },
     },
+      screens: {
+        'xsm' : '380px' 
+      }
   },
   plugins: [],
 }
