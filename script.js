@@ -1,3 +1,15 @@
+// Loading Screen
+
+const loader = document.getElementById('load');
+window.addEventListener('load',() => {
+  setTimeout(()=>{
+    loader.classList.add("opacity-0", "invisible");
+    document.body.classList.remove("overflow-hidden");
+  },2000);
+})
+
+
+
 // Toggling of Bars and Cross
 const bars = document.getElementById('bars');
 const cross = document.getElementById('cross');
