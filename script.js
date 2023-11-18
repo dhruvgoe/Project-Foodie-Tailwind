@@ -100,3 +100,66 @@ surprise.addEventListener('click',() => {
     data=randomIndex;
     renderReview();
 })
+
+// Blog Section
+
+const blogData = [
+  {
+    id: 1,
+    img: "./Images/blog-1.jpg",
+    caption: "Pizza",
+    date: "Jan 1 2023",
+    naam: "Jonathan Smith",
+    heading: "What do you Think about Cheese Pizza recipies?",
+    para: "Financial experts support or help you to to find out which way you can raise your funds more...",
+  },
+  {
+    id: 2,
+    img: "./Images/blog-2.jpg",
+    caption: "Burger",
+    date: "Sept 15 2020",
+    naam: "Jonathan Swift",
+    heading: "Making Chicken Strips with New Delicious Ingredients",
+    para: "Financial experts support or help you to to find out which way you can raise your funds more...",
+  },
+  {
+    id: 3,
+    img: "./Images/blog-3.jpg",
+    caption: "Chicken",
+    date: "Mar 12 2025",
+    naam: "Swift Smith",
+    heading: "Innovator hot Pasta Raw cheesy facts",
+    para: "Financial experts support or help you to to find out which way you can raise your funds more...",
+  },
+];
+
+const imageBlog = document.getElementById('blogImage');
+const caption = document.getElementById('blogCaption');
+const date = document.getElementById('date');
+const Naam = document.getElementById('blogname');
+const heading = document.getElementById('head');
+const para = document.getElementById('para');
+
+let index = 0;
+
+const renderBlog = () => {
+    imageBlog.src = blogData[index].img;
+    caption.innerHTML = blogData[index].caption;
+    date.innerHTML = blogData[index].date;
+    Naam.innerHTML = blogData[index].naam;
+    heading.innerHTML = blogData[index].heading;
+    para.innerHTML = blogData[index].para;
+}
+
+const lbtn = document.getElementById("left-btn-blog");
+const rbtn = document.getElementById("right-btn-blog");
+
+renderBlog();
+lbtn.addEventListener("click", () => {
+  index = index - 1 < 0 ? blogData.length - 1 : index - 1;
+  renderBlog();
+});
+rbtn.addEventListener("click", () => {
+  index = index + 1 >= blogData.length ? 0 : index + 1;
+  renderBlog();
+});
