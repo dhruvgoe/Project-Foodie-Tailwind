@@ -81,27 +81,19 @@ C.forEach((t, e) => {
       "rounded-md",
       "text-white",
       "font-bold",
-      "filter"
+      "filter",
+      "border-2",
+      "border-[#dd9d2d]"
     ),
     j.appendChild(r);
 });
 const m = document.querySelectorAll(".filter"),
   z = (t) => {
-    m[d].classList.remove(
-      "bg-white",
-      "text-[#dd9d2d]",
-      "border-2",
-      "border-[#dd9d2d]"
-    ),
+    m[d].classList.remove("bg-white", "text-[#dd9d2d]"),
       m[d].classList.add("bg-[#dd9d2d]", "text-white"),
       (d = t),
       m[d].classList.remove("bg-[#dd9d2d]", "text-white"),
-      m[d].classList.add(
-        "bg-white",
-        "text-[#dd9d2d]",
-        "border-2",
-        "border-[#dd9d2d]"
-      );
+      m[d].classList.add("bg-white", "text-[#dd9d2d]");
     let e = S;
     d !== 0 && (e = S.filter((r) => r.category === C[d])),
       (L.innerHTML = ""),

@@ -68,7 +68,9 @@ filters.forEach((filter, index) => {
     "rounded-md",
     "text-white",
     "font-bold",
-    "filter"
+    "filter",
+    "border-4",
+    "border-[#dd9d2d]"
   );
   filterContainer.appendChild(newFilter);
 
@@ -80,14 +82,16 @@ filters.forEach((filter, index) => {
 const clickFilter = document.querySelectorAll(".filter");
 
 const menuHandler = (index) => {
-  clickFilter[currentFilter].classList.remove("bg-white","text-[#dd9d2d]","border-2","border-[#dd9d2d]");
+  clickFilter[currentFilter].classList.remove("bg-white", "text-[#dd9d2d]");
   clickFilter[currentFilter].classList.add("bg-[#dd9d2d]", "text-white");
   currentFilter = index;
   clickFilter[currentFilter].classList.remove("bg-[#dd9d2d]", "text-white");
-  clickFilter[currentFilter].classList.add("bg-white", "text-[#dd9d2d]","border-2","border-[#dd9d2d]");
+  clickFilter[currentFilter].classList.add("bg-white", "text-[#dd9d2d]");
   let currentItems = allmenu;
   if (currentFilter !== 0) {
-    currentItems = allmenu.filter((item) => item.category === filters[currentFilter]);
+    currentItems = allmenu.filter(
+      (item) => item.category === filters[currentFilter]
+    );
   }
   // console.log(currentItems);
   cardContainer.innerHTML = "";
