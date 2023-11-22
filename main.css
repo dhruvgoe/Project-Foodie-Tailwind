@@ -50,3 +50,15 @@
     height: 100px;
   }
   
+  .footCycle {
+    animation: cycling 20s linear infinite;
+  }
+
+  @keyframes cycling {
+    0%{
+      transform: translateX(-50%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }

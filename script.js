@@ -297,6 +297,30 @@ cards1.forEach((card, index) => {
   });
 });
 
+// Deleivery Boy Move On Scroll
+
+const deliveryBoy = document.querySelector(".cycle");
+
+let deliveryBoyMove = -80;
+let lastScrollPos = 0;
+
+window.addEventListener("scroll", function () {
+  let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
+
+  if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
+    let activeScrollPos = window.scrollY;
+
+    if (lastScrollPos < activeScrollPos) {
+      deliveryBoyMove += 1;
+    } else {
+      deliveryBoyMove -= 1;
+    }
+
+    lastScrollPos = activeScrollPos;
+    deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
+  }
+});
+
 // Blog Section
 
 const blogData = [
